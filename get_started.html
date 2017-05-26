@@ -1,7 +1,6 @@
 <html>
   <head>
     <script src="https://unpkg.com/vue"></script>
-    <script src="./get_started.js"></script>
   </head>
 
   <body>
@@ -44,5 +43,13 @@
         <todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
       </ol>
     </div>
+
+    <div id="app-8">
+      <p>{{ total }}</p>
+      <button-counter v-on:increment="incrementTotal"></button-counter>
+      <button-counter v-on:increment="incrementTotal"></button-counter>
+    </div>
+
+    <script src="./get_started.js"></script>
   </body>
 </html>
